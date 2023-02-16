@@ -35,7 +35,7 @@ document.getElementById('coupon-apply').addEventListener('click', function(){
     const totalTax = document.getElementById('tax');
     if(getCoupon == 'DISC30'){
         message.style.display = 'block';
-        message2.style.display = 'hidden';
+        message2.style.display = 'none';
     
         const subTotalValue = subTotal();
         //Discount
@@ -49,7 +49,8 @@ document.getElementById('coupon-apply').addEventListener('click', function(){
         //net total
         
     }else{
-        message.style.display = 'hidden';
         message2.style.display = 'block';
+        message.style.display = 'none';
+
     }
 })
